@@ -208,6 +208,33 @@ function FormPage() {
           border-top-right-radius: 3rem;
           border-bottom-right-radius: 3rem;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            height: calc(100vh - 7rem /* 32px */);
+          }
+          form {
+            padding: 4rem 1rem;
+          }
+
+          .text-3xl {
+            font-size: 1.5rem;
+          }
+
+          .text-sm {
+            font-size: 0.875rem;
+          }
+
+          input,
+          select {
+            padding: 0.5rem;
+          }
+
+          button {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+          }
+        }
       `}</style>
     </nav>
   );
